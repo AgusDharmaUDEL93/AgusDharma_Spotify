@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var router = Router()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack (path: $router.navPath){
+            TabView {
+                Tab("Home", systemImage: "house") {
+                    HomeScreen()
+                }
+                
+                Tab("Search", systemImage: "magnifyingglass") {
+                    SearchScreen()
+                }
+                
+                Tab("Library", systemImage: "books.vertical") {
+                    LibraryScreen()
+                }
+            }
+            .navigationDestination(
+                for: Router.Destination.self,
+                destination: { destination in
+                    switch destination {
+                    case .library:
+                        LibraryScreen()
+                    case .playlistDetail(let id):
+                        PlaylistDetailScreen(id: id)
+                    case .searchAdd(let playlistId):
+                        SearchAddScreen(idPlaylist: playlistId)
+                    }
+                }
+            )
         }
-        .padding()
+        
+        .environment(router)
     }
 }
 

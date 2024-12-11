@@ -29,9 +29,22 @@
 		230845602D031EB500135F41 /* Spotify-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spotify-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		230845ED2D046F3F00135F41 /* Exceptions for "Spotify-Assignment" folder in "Spotify-Assignment" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 230845452D031EB300135F41 /* Spotify-Assignment */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		230845482D031EB300135F41 /* Spotify-Assignment */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				230845ED2D046F3F00135F41 /* Exceptions for "Spotify-Assignment" folder in "Spotify-Assignment" target */,
+			);
 			path = "Spotify-Assignment";
 			sourceTree = "<group>";
 		};
@@ -78,6 +91,7 @@
 				230845482D031EB300135F41 /* Spotify-Assignment */,
 				230845592D031EB500135F41 /* Spotify-AssignmentTests */,
 				230845632D031EB500135F41 /* Spotify-AssignmentUITests */,
+				23B24A8C2D08B00B0068CE91 /* Frameworks */,
 				230845472D031EB300135F41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +104,13 @@
 				230845602D031EB500135F41 /* Spotify-AssignmentUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		23B24A8C2D08B00B0068CE91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +216,8 @@
 			);
 			mainGroup = 2308453D2D031EB300135F41;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 230845472D031EB300135F41 /* Products */;
 			projectDirPath = "";
@@ -399,6 +422,7 @@
 				DEVELOPMENT_TEAM = FG6WH2X4N7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotify-Assignment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +452,7 @@
 				DEVELOPMENT_TEAM = FG6WH2X4N7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotify-Assignment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
